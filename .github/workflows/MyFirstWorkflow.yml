@@ -1,11 +1,10 @@
- name: My First Workflow
+name: My First Workflow
 
- on:
-   push:
-     branches:
-       - main
-     
-   workflow_dispatch:
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   MyFirstJob:
@@ -21,6 +20,3 @@ jobs:
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
-
- 
- 
